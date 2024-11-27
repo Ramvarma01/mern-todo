@@ -13,8 +13,8 @@ function App() {
     <div className="App">
       <Routes>
         <Route path="/">
-          <Route index element={user ? <Home /> : <Navigate to="/login" />} />
-          <Route path="signup" element={!user ?<Signup /> : <Navigate to="/signup" /> } />
+          <Route index element={user ? <Home /> : <Navigate to="/signup" />} />
+          <Route path="signup" element={!user ?<Signup /> : <Navigate to="/" /> } />
           <Route path="login" element={!user ?<Login /> : <Navigate to="/" /> } />
         </Route>
       </Routes>
